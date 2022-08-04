@@ -6,6 +6,8 @@ __pycache__
 */.ipynb_checkpoints
 */*.ipynb_checkpoints
 
+.*
+
 models/
 model/
 paths.py
