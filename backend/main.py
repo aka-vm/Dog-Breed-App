@@ -17,12 +17,12 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="backend/templates")
 
 @app.get("/", response_class=HTMLResponse)
-async def root(request: Request):
+def root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
 
 @app.get("/predict-breed/")
-async def predict_breed(request: Request):
+def predict_breed(request: Request):
     return templates.TemplateResponse("result.html", {"request": request})
 
 @app.post("/api/predict-breed/")
