@@ -21,4 +21,4 @@ Mobile View:
 
 PC View:
 
-![](/GIFs/PC%20View.gif)]
+![](/GIFs/PC%20View.gif)
