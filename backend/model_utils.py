@@ -14,7 +14,7 @@ def get_model(
     return model
 
 def get_clf_model():
-    model_path = 'models/InceptionResNetV2.h5'
+    model_path = 'model-binaries/InceptionResNetV2.h5'
     model = get_model(model_path)
     return model
 

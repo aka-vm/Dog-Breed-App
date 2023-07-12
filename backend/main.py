@@ -31,3 +31,6 @@ async def predict_breed(dog_image: DogImage):
     respon = clf_breed(clf_model, image_bytes, dog_image.top_n)
     return JSONResponse(respon)
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0", port=8000)

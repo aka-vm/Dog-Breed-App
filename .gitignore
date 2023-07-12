@@ -13,3 +13,5 @@ paths.py
 
 static/*
 !static/js
+
+venv
