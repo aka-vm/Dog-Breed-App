@@ -29,7 +29,7 @@ def clf_breed(
     image = preprocess_image(image_bytes)
     prediction = model.predict(image)[0]
 
-    with open("models/breeds_dict.json") as f:
+    with open("model-binaries/breeds_dict.json") as f:
         breed_dict = json.load(f)
 
     top_n_pred_score = np.argsort(prediction)[-top_n:][::-1]

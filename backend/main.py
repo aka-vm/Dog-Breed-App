@@ -5,8 +5,8 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 
-from .models import DogImage
-from .model_utils import get_clf_model, clf_breed
+from models import DogImage
+from model_utils import get_clf_model, clf_breed
 
 
 clf_model = get_clf_model()
