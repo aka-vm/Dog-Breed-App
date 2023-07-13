@@ -11,12 +11,12 @@ Click [<u>**here**</u>](http://20.219.1.85:8000) to use the app.<br>
 Note: This may not work, but you can see the GIF below to have an idea of the app.
 
 ## Running the app
-### Locally
-locally:
+### Using Regular Python
+
 1. Clone the repo.
 2. create a virtual environment and install the requirements from `requirements.py`.
 3. Download the model from [Google Drive](https://drive.google.com/file/d/1hH6c4YDjSQ9F2FV1p1QFuHnJ1ouKf_vQ/view?usp=share_link) or `releases` and place it in the `model-binaries` folder.
-4. Run the app using `uvicorn backend.main:app`. The app will be hosted on port [8000](localhost:8000).
+4. Run the app using `python backend/main.py`. The app will be hosted on port [8000](localhost:8000).
 
 ```bash
 # clone
@@ -30,10 +30,19 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # Download The model and paste it in the model-binaries folder
-
+wget -O model-binaries/InceptionResNetV2.h5 https://github.com/aka-vm/Dog-Breed-App/releases/download/Classification-Model/InceptionResNetV2.h5
 # Run server
-uvicorn backend.main:app --reload
+python backend/main.py
 # for web testing I recommend using ngrok
+```
+### Using Docker
+```bash
+# linux/arm64 or apple-silicon
+docker pull akavm/dog-breed-app:0.1.arm64
+docker run -p 8000:8000 akavm/dog-breed-app:0.1.arm64
+# linux/amd64
+docker pull akavm/dog-breed-app:0.1-amd64
+docker run -p 8000:8000 akavm/dog-breed-app:0.1-amd64
 ```
 
 
