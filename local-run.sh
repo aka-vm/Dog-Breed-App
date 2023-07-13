@@ -2,7 +2,7 @@
 pip install virtualenv --quiet
 if [ ! -d "venv" ]; then
     echo "Creating virtual environment"
-    virtualenv --python=python3.9.12 venv
+    virtualenv --python=python3.9 venv
 fi
 source venv/bin/activate
 echo "Installing dependencies"
@@ -19,5 +19,5 @@ if [ ! -f "model-binaries/InceptionResNetV2.h5" ]; then
 fi
 
 # run the app
-uvicorn backend.main:app
+python backend/main.py
 ```
