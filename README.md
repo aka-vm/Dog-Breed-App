@@ -1,7 +1,7 @@
 # Dog-Breed-App
 [![Docker Pulls](https://badgen.net/docker/pulls/akavm/dog-breed-app?icon=docker&label=pulls)](https://hub.docker.com/repository/docker/akavm/dog-breed-app/)
-[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1.arm64/arm64?icon=docker&label=arm64%20build)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1.arm64/images/sha256-7d2802a37865ceda436398411e1e4a101550a084da1cb28167f3269632d3e73e)
-[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1-amd64/amd64?icon=docker&label=amd64%20build)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1-amd64/images/sha256-d97b810984f1b778d16c272dfddfbe9ab6f0c0623309b0991d9e728cc5fd69bd)
+[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1.1/arm64?icon=docker&label=linux/arm64)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1.1/images/sha256-c9e16a306518830e23b4565171b193abd62d4892f11a119478c6efa131f5ceb7?)
+[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1.1/amd64?icon=docker&label=linux/amd64)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1-amd64/images/sha256-c9e16a306518830e23b4565171b193abd62d4892f11a119478c6efa131f5ceb7)
 
 
 This Repository contains a Web App along with the model nb that can be used to predict the breed of a dog based on the image uploaded.
@@ -11,11 +11,12 @@ This Repository contains a Web App along with the model nb that can be used to p
 [This Repo](https://github.com/aka-vm/Hello-CV/tree/master/Stanford%20Dogs) contains the original code, but some modifications are made to make it better.
 
 ## Web App
-Hosted using [FastAPI](https://fastapi.tiangolo.com/) on [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/).<br>
-Click [<u>**here**</u>](http://20.219.1.85:8000) to use the app.<br>
-Note: This may not work, but you can see the GIF below to have an idea of the app.
+The server uses [FastAPI](https://fastapi.tiangolo.com/).<br>
+I've hosted the app on Azure and DigitalOcean, and it works fine. But I recommend using [ngrok](https://ngrok.com/) for quick testing. The Docker image is also available on [Docker Hub](https://hub.docker.com/repository/docker/akavm/dog-breed-app).
+
 
 ## Running the app
+Two ways to run the app, If you want a quick test, I recommend using Docker. It'll work on arm64 and amd64.
 ### Using Regular Python
 
 1. Clone the repo.
@@ -42,12 +43,9 @@ python backend/main.py
 ```
 ### Using Docker
 ```bash
-# linux/arm64 or apple-silicon
-docker pull akavm/dog-breed-app:0.1.arm64
-docker run -p 8000:8000 akavm/dog-breed-app:0.1.arm64
-# linux/amd64
-docker pull akavm/dog-breed-app:0.1-amd64
-docker run -p 8000:8000 akavm/dog-breed-app:0.1-amd64
+# Previsouly I built two images for arm64 and amd64, but now I'm using multi-arch build
+docker pull akavm/dog-breed-app:0.1.1
+docker run -p 8000:8000 akavm/dog-breed-app:0.1.1
 ```
 
 
