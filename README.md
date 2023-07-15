@@ -1,7 +1,7 @@
 # Dog-Breed-App
 [![Docker Pulls](https://badgen.net/docker/pulls/akavm/dog-breed-app?icon=docker&label=pulls)](https://hub.docker.com/repository/docker/akavm/dog-breed-app/)
-[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1.1/arm64?icon=docker&label=linux/arm64)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1.1/images/sha256-c9e16a306518830e23b4565171b193abd62d4892f11a119478c6efa131f5ceb7?)
-[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1.1/amd64?icon=docker&label=linux/amd64)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1-amd64/images/sha256-c9e16a306518830e23b4565171b193abd62d4892f11a119478c6efa131f5ceb7)
+[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1.1/arm64?icon=docker&label=linux/arm64)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1.1/images/sha256-592b5d37cf1256d64d613007676cc1553ce001573f4a7b737bdb7d190fa5edec?context=explore)
+[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1.1/amd64?icon=docker&label=linux/amd64)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1.1/images/sha256-c9e16a306518830e23b4565171b193abd62d4892f11a119478c6efa131f5ceb7?context=explore)
 
 
 This Repository contains a Web App along with the model nb that can be used to predict the breed of a dog based on the image uploaded.
