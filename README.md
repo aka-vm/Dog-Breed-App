@@ -1,4 +1,9 @@
 # Dog-Breed-App
+[![Docker Pulls](https://badgen.net/docker/pulls/akavm/dog-breed-app?icon=docker&label=pulls)](https://hub.docker.com/repository/docker/akavm/dog-breed-app/)
+
+[![Docker Image Size](https://badgen.net/docker/size/trueosiris/godaddypy?icon=docker&label=image%20size)](https://hub.docker.com/r/trueosiris/godaddypy/)
+
+
 This Repository contains a Web App along with the model nb that can be used to predict the breed of a dog based on the image uploaded.
 
 ## Model
