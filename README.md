@@ -1,4 +1,9 @@
 # Dog-Breed-App
+[![Docker Pulls](https://badgen.net/docker/pulls/akavm/dog-breed-app?icon=docker&label=pulls)](https://hub.docker.com/repository/docker/akavm/dog-breed-app/)
+[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1.arm64/arm64?icon=docker&label=arm64%20build)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1.arm64/images/sha256-7d2802a37865ceda436398411e1e4a101550a084da1cb28167f3269632d3e73e)
+[![Docker Image Size](https://badgen.net/docker/size/akavm/dog-breed-app/0.1-amd64/amd64?icon=docker&label=amd64%20build)](https://hub.docker.com/layers/akavm/dog-breed-app/0.1-amd64/images/sha256-d97b810984f1b778d16c272dfddfbe9ab6f0c0623309b0991d9e728cc5fd69bd)
+
+
 This Repository contains a Web App along with the model nb that can be used to predict the breed of a dog based on the image uploaded.
 
 ## Model
