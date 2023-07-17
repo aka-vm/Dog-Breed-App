@@ -15,3 +15,4 @@ static/*
 !static/js
 
 venv*
+model-binaries/best.torchscript
