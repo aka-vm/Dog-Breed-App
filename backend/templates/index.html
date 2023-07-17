@@ -20,11 +20,11 @@
             <a href="https://github.com/aka-vm/Dog-Breed-App" target="_blank">
                 <img src="https://img.icons8.com/ios-glyphs/40/000000/github.png"/>
             </a>
-            <span class="contact100-form-title">Dog Breed Classifier</span>
+            <span class="contact100-form-title">Dog Breed App</span>
             <form class="contact100-form validate-form" action="javascript:form_submit();">
             {# <form class="contact100-form validate-form" action="/predict-breed" method="post" enctype="multipart/form-data"> #}
                 <div class="wrap-input100 validate-input" data-validate = "Valid image file is required: jpg or png">
-                    <span class="label-input100">Select Only One Image File</span>
+                    <span class="label-input100">Select an Image File</span>
                     <input id="inp_file" type="file" name="file" >
                     <input id="inp_img" type="hidden" name="img" value="">
                     <span class="focus-input100"></span>
@@ -32,12 +32,23 @@
                 <div>
                     <img id='image-picked' class='no-display'>
                 </div>
+
+                <div class="container-radio">
+                    <div class="model-selector">
+                        <input type="radio" id="model-1" name="model-selected" value="clf" checked>
+                        <label for="model-1">Classify(CNN)</label>
+
+                        <input type="radio" id="model-2" name="model-selected" value="det">
+                        <label for="model-2">Detect (YOLOv8)</label>
+                    </div>
+                </div>
+
                 <div class="container-contact100-form-btn">
                     <div class="wrap-contact100-form-btn">
                         <div class="contact100-form-bgbtn"></div>
-                        <button type = "button" id = "submit_btn" class="contact100-form-btn">
+                        <button type = "button" id = "submit_btn" class="contact100-form-btn" onclick="imageSubmit()">
                             <span>
-                                Upload & Find Breed
+                                Upload & Find Results
                                 <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
                             </span>
                         </button>

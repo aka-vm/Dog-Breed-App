@@ -4,6 +4,13 @@ var el = x => document.getElementById(x);
 
 var upload_img = document.getElementById('inp_file').addEventListener('change', fileChange, false);
 
+function imageSubmit() {
+    var selectedOption = document.querySelector('input[name="model-selected"]:checked').value;
+    console.log(selectedOption);
+    localStorage.setItem("modelSelected", selectedOption)
+
+}
+
 function fileChange(e) {
 
     var file = e.target.files[0];
@@ -28,26 +35,6 @@ function fileChange(e) {
                 // console.log("Updated width:",w, "Updated height:", h);
 
                 var canvas = document.createElement('canvas');
-                // // FORCEFUL to portrait mode only images
-                // if (w > h) {
-                //     // canvas.width = h;
-                //     // canvas.height = w;
-                //     canvas.width = w;
-                //     canvas.height = h;
-                //     var ctx = canvas.getContext('2d');
-                //     // move the rotation point to the center of the rect
-                //     // ctx.translate( h / 2, w / 2);
-                //     ctx.translate( w / 2, h / 2);
-                //     // Rotate Image
-                //     ctx.rotate(-90 * Math.PI / 180);
-                //     // ctx.drawImage(image, -h / 2, -w / 2, h, w);
-                //     ctx.drawImage(image, -w / 2, -h / 2, w, h);
-                // }
-                // else {
-                //     canvas.width = w;
-                //     canvas.height = h;
-                //     canvas.getContext('2d').drawImage(image, 0, 0, w, h);
-                // }
 
                 //  NO FORCEFUL Just Use Default Image
                     canvas.width = w;
