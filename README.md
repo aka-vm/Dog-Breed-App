@@ -22,7 +22,8 @@ Two ways to run the app, If you want a quick test, I recommend using Docker. It'
 1. Clone the repo.
 2. create a virtual environment and install the requirements from `requirements.py`.
 3. Download the model from [Google Drive](https://drive.google.com/file/d/1hH6c4YDjSQ9F2FV1p1QFuHnJ1ouKf_vQ/view?usp=share_link) or `releases` and place it in the `model-binaries` folder.
-4. Run the app using `python backend/main.py`. The app will be hosted on port [8000](localhost:8000).
+4. Download The static files from [Google Drive](https://drive.google.com/file/d/1IP_i9OXzK5jSo9dm_1rvrHIIr6kozOiE/view?usp=share_link) and place them inside repo.
+5. Run the app using `python backend/main.py`. The app will be hosted on port [8000](localhost:8000).
 
 ```bash
 # clone
@@ -37,6 +38,8 @@ pip install -r requirements.txt
 
 # Download The model and paste it in the model-binaries folder
 wget -O model-binaries/InceptionResNetV2.h5 https://github.com/aka-vm/Dog-Breed-App/releases/download/Classification-Model/InceptionResNetV2.h5
+#! Download The Static Files from Here
+#https://drive.google.com/file/d/1IP_i9OXzK5jSo9dm_1rvrHIIr6kozOiE/view?usp=share_link
 # Run server
 python backend/main.py
 # for web testing I recommend using ngrok
