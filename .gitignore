@@ -16,3 +16,5 @@ static/*
 
 venv*
 model-binaries/best.torchscript
+
+*.ipynb
