@@ -54,7 +54,7 @@ docker run -p 8000:8000 akavm/dog-breed-app:0.1.1
 
 Mobile View:
 <!-- Height 200px -->
-<img src="GIFs/Mobile%20View.gif" alt="Mobile View" width="40%">
+<!-- <img src="GIFs/Mobile%20View.gif" alt="Mobile View" width="40%"> -->
 
 ----------
 
