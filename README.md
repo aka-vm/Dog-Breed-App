@@ -28,6 +28,7 @@ The Models are trained on [Stanford Dogs Dataset](http://vision.stanford.edu/adi
 * [This Script](models/InceptionResNetV2.py) trains the model on Stanford Dogs Dataset.
 [This Repo](https://github.com/aka-vm/Hello-CV/tree/master/Stanford%20Dogs/detection) contains the original code, I've explained everything in detail there, go check it out.
 
+
 ## Web App
 The server uses [FastAPI](https://fastapi.tiangolo.com/).<br>
 I've hosted the app on Azure and DigitalOcean, and it works fine. But I recommend using [ngrok](https://ngrok.com/) for quick testing. The Docker image is also available on [Docker Hub](https://hub.docker.com/repository/docker/akavm/dog-breed-app).
