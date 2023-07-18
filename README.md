@@ -6,6 +6,10 @@
 
 This Repository contains a Web App along with the model nb that can be used to predict the breed of a dog based on the image uploaded.
 
+### 👉 [CHECK OUT THIS BRANCH](https://github.com/aka-vm/Dog-Breed-App/tree/version-2) 👈
+
+It is still under development for Decker Image and other optimizations but it works.
+
 ## Model
 [This Notebook](models/InceptionResNetV2.ipynb) trains the model on Stanford Dogs Dataset.
 [This Repo](https://github.com/aka-vm/Hello-CV/tree/master/Stanford%20Dogs) contains the original code, but some modifications are made to make it better.
